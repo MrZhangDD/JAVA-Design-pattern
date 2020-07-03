@@ -1,6 +1,6 @@
 package com.zhang.build.demo2;
 
-//建造者
+//抽象的建造者
 public abstract class Builder {
 
     abstract Builder builderA(String msg);

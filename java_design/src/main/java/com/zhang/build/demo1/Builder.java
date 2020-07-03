@@ -5,10 +5,10 @@ package com.zhang.build.demo1;
  */
 
 public abstract class Builder {
-    abstract void buildA();
-    abstract void buildB();
-    abstract void buildC();
-    abstract void buildD();
+    abstract void buildA(); //地基
+    abstract void buildB(); //钢筋
+    abstract void buildC(); //铺电线
+    abstract void buildD(); //粉刷
 
     //完工
     abstract Product getProduct();

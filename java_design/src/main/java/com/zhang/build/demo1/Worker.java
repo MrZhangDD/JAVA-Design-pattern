@@ -1,5 +1,9 @@
 package com.zhang.build.demo1;
 
+
+/**
+ * 具体的工人建造者
+ */
 public class Worker extends Builder{
 
     private Product product;
