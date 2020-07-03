@@ -13,7 +13,7 @@ public class Video implements Cloneable{
     @Override
     protected Object clone() throws CloneNotSupportedException {
         Object obj = super.clone();
-        //todo 克隆属性然后重新赋值给克隆后的对象
+        //todo 克隆属性然后重新赋值给克隆后的对象  springfremark自带的属性克隆为深度克隆
         Video video = (Video) obj;
         video.date = (Date) this.date.clone();
         return obj;
