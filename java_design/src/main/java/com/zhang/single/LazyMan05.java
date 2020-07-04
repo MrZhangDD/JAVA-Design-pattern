@@ -2,6 +2,7 @@ package com.zhang.single;
 
 /**
  * 静态内部类
+ * 初始化的时候类只加载一次，静态内部类调用的时候也只加载一次
  */
 public class LazyMan05 {
 

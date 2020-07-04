@@ -13,15 +13,20 @@ public class LazyMan01 {
 
     public static LazyMan01 getInstance(){
         if(lazyMan01 == null){
+            try {
+                Thread.sleep(1);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
             lazyMan01 = new LazyMan01();
         }
         return lazyMan01;
     }
 
     public static void main(String[] args) {
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 100; i++) {
             new Thread(()->{
-                LazyMan01.getInstance();
+                System.out.println(LazyMan01.getInstance().hashCode());
             }).start();
         }
     }
